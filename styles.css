@@ -4,12 +4,15 @@
     grid-template-rows: 1fr 3fr;
 }
 
+/* HEADER */
+
 .header {
     background-color: whitesmoke;
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 2fr 3fr;
+    padding: 0px 20px;
 }
 
 .search-container,
@@ -17,7 +20,30 @@
 .user-container,
 .button-container {
     display: flex;
+    align-items: center;
+    gap: 15px;
 }
+
+input[type="text"] {
+    flex: 1;
+}
+
+.profile-container {
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.greeting div:nth-child(2){
+    font-weight: bold;
+    font-size: large;
+    padding-top: 8px;
+}
+
+.button-container {
+    justify-content: space-around;
+}
+
+/* SIDEBAR */
 
 .sidebar {
     background-color: rgb(33, 149, 207);
