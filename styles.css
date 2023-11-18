@@ -7,6 +7,16 @@
 .header {
     background-color: whitesmoke;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 2fr 3fr;
+}
+
+.search-container,
+.profile-container,
+.user-container,
+.button-container {
+    display: flex;
 }
 
 .sidebar {
